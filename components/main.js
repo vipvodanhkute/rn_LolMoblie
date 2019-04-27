@@ -23,8 +23,8 @@ export default class Main extends Component {
     console.log(this.state.dataSource)
     return (
       <View style={styles.container}>
-        <Text>Chao ban minh</Text>
          <FlatList
+            style={styles.flatList}
             numColumns={3}
             data={this.state.dataSource}
             renderItem={({item})=><Champ infoChamp={item}/>}
@@ -37,8 +37,12 @@ export default class Main extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    //justifyContent: 'space-between',
     backgroundColor: 'white'
+  },
+  flatList:{
+    borderWidth:5,
+    borderColor:'blue',
+    //flex:1
   }
 })
