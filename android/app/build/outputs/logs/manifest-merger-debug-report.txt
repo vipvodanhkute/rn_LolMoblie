@@ -5,6 +5,7 @@ INJECTED from D:\React\rn_LolMoblie\android\app\src\main\AndroidManifest.xml:1:1
 INJECTED from D:\React\rn_LolMoblie\android\app\src\main\AndroidManifest.xml:1:1-26:12
 INJECTED from D:\React\rn_LolMoblie\android\app\src\main\AndroidManifest.xml:1:1-26:12
 MERGED from D:\React\rn_LolMoblie\android\app\src\main\AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-gesture-handler] D:\React\rn_LolMoblie\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.59.5] C:\Users\NhuHuynh\.gradle\caches\transforms-1\files-1.1\react-native-0.59.5.aar\59075485cc3ca9cef9c4a0364b759bc9\AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\NhuHuynh\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\6d799960d01e2c48bd5996fe71760641\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\NhuHuynh\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\20368d9927fe0fb346a5e36cbe140485\AndroidManifest.xml:17:1-22:12
@@ -129,6 +130,8 @@ uses-sdk
 INJECTED from D:\React\rn_LolMoblie\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\React\rn_LolMoblie\android\app\src\main\AndroidManifest.xml
 INJECTED from D:\React\rn_LolMoblie\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-gesture-handler] D:\React\rn_LolMoblie\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] D:\React\rn_LolMoblie\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.59.5] C:\Users\NhuHuynh\.gradle\caches\transforms-1\files-1.1\react-native-0.59.5.aar\59075485cc3ca9cef9c4a0364b759bc9\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.59.5] C:\Users\NhuHuynh\.gradle\caches\transforms-1\files-1.1\react-native-0.59.5.aar\59075485cc3ca9cef9c4a0364b759bc9\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\NhuHuynh\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\6d799960d01e2c48bd5996fe71760641\AndroidManifest.xml:20:5-44

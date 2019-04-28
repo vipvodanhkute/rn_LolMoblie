@@ -1,10 +1,15 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import Main from './components/main'
+import MainNavigation from './components/main/mainNavigtion'
+import Champs from './components/Champs/champs';
+import InfoChamp from './components/Champs/infoChamp'
+
 export default class App extends Component {
   render() {
     return (
-        <Main/>
+        <MainNavigation/>
+        //<Champs/>
+        //<InfoChamp/>
     );
   }
 }
