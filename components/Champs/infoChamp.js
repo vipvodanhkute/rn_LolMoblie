@@ -22,21 +22,27 @@ export default class InfoChamp extends Component {
             tags: [],
             stats: {},
             activeIndex: 0,
-            backgroundChamp: 'xx'
         })
     }
     _source = () => {
         const name = this.props.navigation.state.params.name;
         const url = 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/';
         const uri = `${url}${name}_${this.state.activeIndex}.jpg`;
-        // this.setState({
-        //     backgroundChamp:uri
-        // })
         return uri
     }
-    componentWillMount() {
+    componentWillMount(){
         this._getSkinsChamp()
     }
+    // componentDidMount() {
+    //     this._getSkinsChamp()
+    // }
+    shouldComponentUpdate(){
+        return true
+    }
+    componentWillUpdate(){
+        this._getSkinsChamp()
+    }
+    
     _getSkinsChamp = () => {
         getAPIChampInfo(this.props.navigation.state.params.name).then(res => this.setState({
             API: res.apiArr[0],
@@ -52,26 +58,21 @@ export default class InfoChamp extends Component {
     }
     _renderItem({ item, index }) {
         return (
-            <View style={{justifyContent:'center'}}>
+            <View style={{ justifyContent: 'center' }}>
                 <Image
                     resizeMode={'contain'}
                     style={{ width: 150, height: 150 }}
                     source={{ uri: `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${item.name.substr(0, item.name.indexOf(' '))}_${item.num}.jpg` }}
                 />
                 <Text style={{ textAlign: 'center', color: 'white' }}>{item.name}</Text>
-                {
-                    console.log(item.name.substr(0, item.name.indexOf(' ')))
-                }{
-                    console.log(`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${item.name.substr(0, item.name.indexOf(' '))}_${item.num}.jpg`)
-                }
             </View>
         );
     }
     render() {
-        console.log(this._source())
-        console.log(this.state.API)
-        console.log(this.state.carouselData)
-        console.log(this.state.backgroundChamp)
+    //    // console.log(this._source())
+    //     //console.log(this.state.API)
+    //     //console.log(this.state.carouselData)
+    //     console.log(this.props.navigation.state.params.name)
         return (
             <ImageBackground
                 style={styles.backgroundImage}
@@ -131,7 +132,7 @@ const styles = StyleSheet.create({
     backgroundImage: {
         width: '100%',
         flex: 1,
-        flexDirection:'row'
+        flexDirection: 'row'
     },
     safeAreaView: {
         justifyContent: 'center',
