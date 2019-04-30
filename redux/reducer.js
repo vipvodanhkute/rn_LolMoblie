@@ -1,7 +1,6 @@
 import { getAPIChampionAll } from '../api/getAPIChampionAll'
 const defaultState = {
     APIChapms: getAPIChampionAll()
-        .then(res => res.apiArr)
 }
 const filterChampsReducer = (state = defaultState, action) => {
     if (action.type === 'ALL') {

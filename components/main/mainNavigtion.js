@@ -3,22 +3,50 @@ import {
     createAppContainer,
     createStackNavigator,
     createDrawerNavigator,
+    createBottomTabNavigator,
 } from 'react-navigation'
-//Fighter/Tank/Mage/Assassin/Support
-import Champs from '../Champs/champs';
-import InfoChamp from '../Champs/infoChamp'
+import All from '../filterChamp/All';
+import Tank from '../filterChamp/tank';
+import Fighter from '../filterChamp/fighter';
+import Assassin from '../filterChamp/assassin';
+import Mage from '../filterChamp/mage';
+import Marksman from '../filterChamp/marksman';
+import Support from '../filterChamp/support';
+import InfoChamp from '../filterChamp/infoChamp';
 export default createAppContainer(createDrawerNavigator({
-    // All:
-    // Tank:
-    // Fighter:
-    // Assassin:
-    // Mage:
-    // Marksman:
-    // Support:
-    Champs:{
-        screen:Champs
+    All:{
+        screen:All
     },
-    infoChamp:{
+    Tank:{
+        screen:Tank
+    },
+    Fighter:{
+        screen:Fighter
+    },
+    Assassin:{
+        screen:Assassin
+    },
+    Mage:{
+        screen:Mage
+    },
+    Marksman:{
+        screen:Marksman
+    },
+    Support:{
+        screen:Support
+    },
+    InfoChamp:{
         screen:InfoChamp
-    },
-}))
+    }, 
+},{
+    intialRouteName: 'Home',
+    // navigationOptions: {
+    //   headerStyle : {
+    //     backgroundColor: '#f4511e',
+    //   },
+    //   headerTintColor: '#fff',
+    //   headerTitleStyle : {
+    //     color: 'white',
+    //   },
+    // },
+  }))
